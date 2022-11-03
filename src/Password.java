@@ -85,4 +85,11 @@ public class Password {
             return "This is a weak password :( definitely find a new one";
         }
     }
+
+    @Override
+    public String toString() {
+        return "Password{" +
+                "Value='" + Value + '\'' +
+                '}';
+    }
 }
