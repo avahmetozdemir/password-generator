@@ -70,4 +70,19 @@ public class Password {
         //types.
         return Score;
     }
+
+    //Prev. func. gives us the score. With this score we return messages.
+    public String calculateScore() {
+        int Score = this.PasswordStrength();
+
+        if (Score == 6) {
+            return "This is a very good password :D check the Useful Information section to make sure it satisfies the guidelines";
+        } else if (Score >= 4) {
+            return "This is a good password :) but you can still do better";
+        } else if (Score >= 3) {
+            return "This is a medium password :/ try making it better";
+        } else {
+            return "This is a weak password :( definitely find a new one";
+        }
+    }
 }
